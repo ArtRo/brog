@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ndm.dao.UserProfileDao">
+
+  <resultMap id="BaseResultMap" type="com.ndm.entity.UserProfile">
+			<id column="id" jdbcType="BIGINT" property="id" />
+			<result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+			<result column="sex" jdbcType="INTEGER" property="sex" />
+			<result column="tel" jdbcType="BIGINT" property="tel" />
+			<result column="email" jdbcType="VARCHAR" property="email" />
+			<result column="brithday" jdbcType="TIMESTAMP" property="brithday" />
+			<result column="address" jdbcType="INTEGER" property="address" />
+			<result column="add_info" jdbcType="VARCHAR" property="addInfo" />
+			<result column="account_id" jdbcType="BIGINT" property="accountId" />
+			<result column="height" jdbcType="INT" property="height" />
+			<result column="image" jdbcType="VARCHAR" property="image" />
+			<result column="weight" jdbcType="INTEGER" property="weight" />
+			<result column="id_card" jdbcType="VARCHAR" property="idCard" />
+			<result column="id_type" jdbcType="INTEGER" property="idType" />
+			<result column="signature" jdbcType="VARCHAR" property="signature" />
+  </resultMap>
+  
+  <sql id="Base_Column_List">
+		id,
+		nick_name,
+		sex,
+		tel,
+		email,
+		brithday,
+		address,
+		add_info,
+		account_id,
+		height,
+		image,
+		weight,
+		id_card,
+		id_type,
+		signature
+  </sql>  
+  
+  <select id="selectByExample" parameterType="com.ndm.entity.UserProfile" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from user_profile
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="limitStart > -1">
+      limit ${limitStart} , ${limitEnd}
+    </if>
+  </select>    
+  
+ <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user_profile
+    where id = #{id,jdbcType=Long}
+  </delete>    
+  
+  <insert id="insertSelective" parameterType="com.ndm.entity.UserProfile">
+    insert into user_profile
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+		  <if test="id != null">
+			id,
+		  </if>		
+		  <if test="nickName != null">
+			nick_name,
+		  </if>		
+		  <if test="sex != null">
+			sex,
+		  </if>		
+		  <if test="tel != null">
+			tel,
+		  </if>		
+		  <if test="email != null">
+			email,
+		  </if>		
+		  <if test="brithday != null">
+			brithday,
+		  </if>		
+		  <if test="address != null">
+			address,
+		  </if>		
+		  <if test="addInfo != null">
+			add_info,
+		  </if>		
+		  <if test="accountId != null">
+			account_id,
+		  </if>		
+		  <if test="height != null">
+			height,
+		  </if>		
+		  <if test="image != null">
+			image,
+		  </if>		
+		  <if test="weight != null">
+			weight,
+		  </if>		
+		  <if test="idCard != null">
+			id_card,
+		  </if>		
+		  <if test="idType != null">
+			id_type,
+		  </if>		
+		  <if test="signature != null">
+			signature,
+		  </if>		
+    </trim>  
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=BIGINT},
+			</if>
+			<if test="nickName != null">
+				#{nickName,jdbcType=VARCHAR},
+			</if>
+			<if test="sex != null">
+				#{sex,jdbcType=INTEGER},
+			</if>
+			<if test="tel != null">
+				#{tel,jdbcType=BIGINT},
+			</if>
+			<if test="email != null">
+				#{email,jdbcType=VARCHAR},
+			</if>
+			<if test="brithday != null">
+				#{brithday,jdbcType=TIMESTAMP},
+			</if>
+			<if test="address != null">
+				#{address,jdbcType=INTEGER},
+			</if>
+			<if test="addInfo != null">
+				#{addInfo,jdbcType=VARCHAR},
+			</if>
+			<if test="accountId != null">
+				#{accountId,jdbcType=BIGINT},
+			</if>
+			<if test="height != null">
+				#{height,jdbcType=INT},
+			</if>
+			<if test="image != null">
+				#{image,jdbcType=VARCHAR},
+			</if>
+			<if test="weight != null">
+				#{weight,jdbcType=INTEGER},
+			</if>
+			<if test="idCard != null">
+				#{idCard,jdbcType=VARCHAR},
+			</if>
+			<if test="idType != null">
+				#{idType,jdbcType=INTEGER},
+			</if>
+			<if test="signature != null">
+				#{signature,jdbcType=VARCHAR},
+			</if>
+    </trim>
+  </insert>
+  
+  <update id="updateByPrimaryKeySelective" parameterType="com.ndm.entity.UserProfile">
+    update user_profile 
+    <set>
+			<if test="id != null">
+				id = #{id,jdbcType=BIGINT},
+			</if>
+			<if test="nickName != null">
+				nick_name = #{nickName,jdbcType=VARCHAR},
+			</if>
+			<if test="sex != null">
+				sex = #{sex,jdbcType=INTEGER},
+			</if>
+			<if test="tel != null">
+				tel = #{tel,jdbcType=BIGINT},
+			</if>
+			<if test="email != null">
+				email = #{email,jdbcType=VARCHAR},
+			</if>
+			<if test="brithday != null">
+				brithday = #{brithday,jdbcType=TIMESTAMP},
+			</if>
+			<if test="address != null">
+				address = #{address,jdbcType=INTEGER},
+			</if>
+			<if test="addInfo != null">
+				add_info = #{addInfo,jdbcType=VARCHAR},
+			</if>
+			<if test="accountId != null">
+				account_id = #{accountId,jdbcType=BIGINT},
+			</if>
+			<if test="height != null">
+				height = #{height,jdbcType=INT},
+			</if>
+			<if test="image != null">
+				image = #{image,jdbcType=VARCHAR},
+			</if>
+			<if test="weight != null">
+				weight = #{weight,jdbcType=INTEGER},
+			</if>
+			<if test="idCard != null">
+				id_card = #{idCard,jdbcType=VARCHAR},
+			</if>
+			<if test="idType != null">
+				id_type = #{idType,jdbcType=INTEGER},
+			</if>
+			<if test="signature != null">
+				signature = #{signature,jdbcType=VARCHAR},
+			</if>
+   
+    </set>
+    where id = #{id,jdbcType=Long}
+  </update>   
+  
+</mapper>
