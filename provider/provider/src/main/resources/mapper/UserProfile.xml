@@ -12,7 +12,7 @@
 			<result column="address" jdbcType="INTEGER" property="address" />
 			<result column="add_info" jdbcType="VARCHAR" property="addInfo" />
 			<result column="account_id" jdbcType="BIGINT" property="accountId" />
-			<result column="height" jdbcType="INT" property="height" />
+			<result column="height" jdbcType="INTEGER" property="height" />
 			<result column="image" jdbcType="VARCHAR" property="image" />
 			<result column="weight" jdbcType="INTEGER" property="weight" />
 			<result column="id_card" jdbcType="VARCHAR" property="idCard" />
@@ -56,7 +56,7 @@
   
  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from user_profile
-    where id = #{id,jdbcType=Long}
+    where id = #{id,jdbcType=BIGINT}
   </delete>    
   
   <insert id="insertSelective" parameterType="com.ndm.entity.UserProfile">
@@ -137,7 +137,7 @@
 				#{accountId,jdbcType=BIGINT},
 			</if>
 			<if test="height != null">
-				#{height,jdbcType=INT},
+				#{height,jdbcType=INTEGER},
 			</if>
 			<if test="image != null">
 				#{image,jdbcType=VARCHAR},
@@ -188,7 +188,7 @@
 				account_id = #{accountId,jdbcType=BIGINT},
 			</if>
 			<if test="height != null">
-				height = #{height,jdbcType=INT},
+				height = #{height,jdbcType=INTEGER},
 			</if>
 			<if test="image != null">
 				image = #{image,jdbcType=VARCHAR},
@@ -207,7 +207,7 @@
 			</if>
    
     </set>
-    where id = #{id,jdbcType=Long}
+    where id = #{id,jdbcType=BIGINT}
   </update>   
   
 </mapper>

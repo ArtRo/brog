@@ -62,11 +62,12 @@
         <version>${spring-version}</version>
     </dependency>
 
-        <dependency>
-            <groupId>com.ndm</groupId>
-            <artifactId>api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+    <dependency>
+        <groupId>com.ndm</groupId>
+        <artifactId>api</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
+
 
     <!-- spring base end -->
 
@@ -99,6 +100,34 @@
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis-spring</artifactId>
         <version>${mybatis-spring.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.version}</version>
+    </dependency>
+    <!--整合mongodb-->
+    <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongodb-driver</artifactId>
+        <version>${mongodb.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-mongodb</artifactId>
+        <version>${spring-mongodb.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-redis</artifactId>
+        <version>${spring-redis.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>${aspectjrt.version}</version>
     </dependency>
     </dependencies>
     <build>
