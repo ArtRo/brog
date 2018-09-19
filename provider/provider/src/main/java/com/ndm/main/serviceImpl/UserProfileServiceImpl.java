@@ -1,6 +1,6 @@
-package com.ndm.serviceImpl;
+package com.ndm.main.serviceImpl;
 
-import com.ndm.dao.UserProfileDao;
+import com.ndm.main.dao.UserProfileDao;
 import com.ndm.entity.UserProfile;
 import com.ndm.service.UserProfileService;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.ndm.dao;
+package com.ndm.main.dao;
 
 import com.ndm.entity.UserProfile;
 

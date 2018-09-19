@@ -15,14 +15,15 @@
         <junit.version>3.8.1</junit.version>
         <dubbo.version>2.5.3</dubbo.version>
         <zk.version>3.5.3-beta</zk.version>
-        <spring-version>5.0.8.RELEASE</spring-version>
+        <spring-version>4.3.18.RELEASE</spring-version>
+        <spring-security-core.version>4.2.6.RELEASE</spring-security-core.version>
         <mybatis.version>3.4.5</mybatis.version>
         <mybatis-spring.version>1.3.1</mybatis-spring.version>
         <mysql.version>8.0.12</mysql.version>
         <druid.version>1.0.29</druid.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
-        <jedis_version>2.5.2</jedis_version>
-        <spring-redis.version>2.0.9.RELEASE</spring-redis.version>
+        <jedis_version>2.9.0</jedis_version>
+        <spring-redis.version>1.7.2.RELEASE</spring-redis.version>
         <!-- Log libs -->
         <slf4j_version>1.7.25</slf4j_version>
         <jcl_version>1.1</jcl_version>
@@ -32,9 +33,10 @@
         <google.guava.version>25.1-jre</google.guava.version>
         <javax.version>2.1</javax.version>
         <!--整合mongo-->
-        <mongodb.version>3.8.0</mongodb.version>
-        <spring-mongodb.version>2.0.10.RELEASE</spring-mongodb.version>
+        <mongodb.version>3.7.1</mongodb.version>
+        <spring-data-version>2.0.5.RELEASE</spring-data-version>
         <aspectjrt.version>1.9.1</aspectjrt.version>
+        <fastJson.version>1.2.49</fastJson.version>
     </properties>
 
     <dependencies>
@@ -162,11 +164,15 @@
             <artifactId>mongodb-driver</artifactId>
             <version>${mongodb.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
-            <version>${spring-mongodb.version}</version>
+            <version>${spring-data-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>${spring-data-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
@@ -176,6 +182,29 @@
             <version>${aspectjrt.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastJson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring-security-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-openid</artifactId>
+            <version>${spring-security-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security-core.version}</version>
+        </dependency>
 
 
     </dependencies>
