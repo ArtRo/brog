@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ndm.main.dao.UserProfileDao">
 
-  <resultMap id="BaseResultMap" type="com.ndm.entity.UserProfile">
+  <resultMap id="BaseResultMap" type="com.ndm.api.entity.UserProfile">
 			<id column="id" jdbcType="BIGINT" property="id" />
 			<result column="nick_name" jdbcType="VARCHAR" property="nickName" />
 			<result column="sex" jdbcType="INTEGER" property="sex" />
@@ -38,7 +38,7 @@
 		signature
   </sql>  
   
-  <select id="selectByExample" parameterType="com.ndm.entity.UserProfile" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.ndm.api.entity.UserProfile" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -59,7 +59,7 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>    
   
-  <insert id="insertSelective" parameterType="com.ndm.entity.UserProfile">
+  <insert id="insertSelective" parameterType="com.ndm.api.entity.UserProfile">
     insert into user_profile
     <trim prefix="(" suffix=")" suffixOverrides=",">
 		  <if test="id != null">
@@ -157,7 +157,7 @@
     </trim>
   </insert>
   
-  <update id="updateByPrimaryKeySelective" parameterType="com.ndm.entity.UserProfile">
+  <update id="updateByPrimaryKeySelective" parameterType="com.ndm.api.entity.UserProfile">
     update user_profile 
     <set>
 			<if test="id != null">

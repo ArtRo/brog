@@ -1,6 +1,6 @@
-package com.ndm.service;
+package com.ndm.api.service;
 
-import com.ndm.entity.UserProfile;
+import com.ndm.api.entity.UserProfile;
 
 import java.util.List;
 

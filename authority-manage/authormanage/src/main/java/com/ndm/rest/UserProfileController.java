@@ -1,9 +1,10 @@
 package com.ndm.rest;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.ndm.entity.UserProfile;
-import com.ndm.service.UserProfileService;
+import com.ndm.api.entity.UserProfile;
+import com.ndm.api.service.UserProfileService;
 import org.springframework.stereotype.Controller;
+
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

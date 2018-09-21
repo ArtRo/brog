@@ -1,7 +1,7 @@
 package cn.ndm.string;
 
 import cn.ndm.collection.CollectionBuilder;
-import com.alibaba.druid.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 import java.util.regex.Matcher;
@@ -272,4 +272,7 @@ public class MatchStringUtil {
         }
         return matcher.appendTail(stringBuffer).toString();
     }
+
 }
+
+

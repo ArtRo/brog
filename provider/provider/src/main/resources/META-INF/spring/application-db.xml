@@ -51,7 +51,7 @@
                 <value>classpath*:mapper/*/*.xml</value>
             </list>
         </property>
-        <property name="typeAliasesPackage" value="com.ndm.entity" />
+        <property name="typeAliasesPackage" value="com.ndm.api.entity" />
     </bean>
 
 

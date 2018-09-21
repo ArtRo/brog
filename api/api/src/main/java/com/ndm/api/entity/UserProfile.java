@@ -1,4 +1,4 @@
-package com.ndm.entity;
+package com.ndm.api.entity;
 
 import java.util.Date;
 

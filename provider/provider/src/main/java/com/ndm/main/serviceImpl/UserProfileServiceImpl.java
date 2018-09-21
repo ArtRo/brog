@@ -1,9 +1,9 @@
 package com.ndm.main.serviceImpl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.ndm.main.dao.UserProfileDao;
-import com.ndm.entity.UserProfile;
-import com.ndm.service.UserProfileService;
-import org.springframework.stereotype.Service;
+import com.ndm.api.entity.UserProfile;
+import com.ndm.api.service.UserProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
