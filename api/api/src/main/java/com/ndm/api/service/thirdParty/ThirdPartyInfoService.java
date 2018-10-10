@@ -1,5 +1,7 @@
 package com.ndm.api.service.thirdParty;
 
+import com.ndm.api.service.po.UserPo;
+
 public interface ThirdPartyInfoService {
     String GRANT_TYPE = "authorization_code", WEIBO_SCOPE = "all", WEIXIN_SCOPE = "snsapi_userinfo", QQ_SCOPE = "get_user_info";
     /**
