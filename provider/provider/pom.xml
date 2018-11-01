@@ -13,117 +13,120 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-    <!-- test begin -->
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-        <scope>test</scope>
-    </dependency>
+        <!-- test begin -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
 
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-test</artifactId>
-        <version>${spring-version}</version>
-        <scope>test</scope>
-    </dependency>
-    <!-- test end -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring-version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- test end -->
 
-    <!-- spring base begin -->
-    <!--<dependency>-->
+        <!-- spring base begin -->
+        <!--<dependency>-->
         <!--<groupId>org.springframework</groupId>-->
         <!--<artifactId>spring-core</artifactId>-->
         <!--<version>${spring-version}</version>-->
-    <!--</dependency>-->
+        <!--</dependency>-->
 
-    <!--<dependency>-->
+        <!--<dependency>-->
         <!--<groupId>org.springframework</groupId>-->
         <!--<artifactId>spring-tx</artifactId>-->
         <!--<version>${spring-version}</version>-->
-    <!--</dependency>-->
+        <!--</dependency>-->
 
 
-
-    <!--<dependency>-->
+        <!--<dependency>-->
         <!--<groupId>org.springframework</groupId>-->
         <!--<artifactId>spring-aop</artifactId>-->
         <!--<version>${spring-version}</version>-->
-    <!--</dependency>-->
+        <!--</dependency>-->
 
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context-support</artifactId>
-        <version>${spring-version}</version>
-    </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
 
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-beans</artifactId>
-        <version>${spring-version}</version>
-    </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
 
-    <!--<dependency>-->
+        <!--<dependency>-->
         <!--<groupId>org.springframework</groupId>-->
         <!--<artifactId>spring-webmvc</artifactId>-->
         <!--<version>${spring-version}</version>-->
-    <!--</dependency>-->
+        <!--</dependency>-->
 
-    <dependency>
-        <groupId>com.ndm</groupId>
-        <artifactId>api</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </dependency>
+        <dependency>
+            <groupId>com.ndm</groupId>
+            <artifactId>api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
+        <dependency>
+            <groupId>com.ndm</groupId>
+            <artifactId>util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- spring base end -->
 
-    <!-- spring base end -->
-
-    <!-- database begin -->
-    <!--<dependency>-->
+        <!-- database begin -->
+        <!--<dependency>-->
         <!--<groupId>mysql</groupId>-->
         <!--<artifactId>mysql-connector-java</artifactId>-->
         <!---->
-    <!--</dependency>-->
+        <!--</dependency>-->
 
-    <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>druid</artifactId>
-        <version>${druid.version}</version>
-    </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
 
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jdbc</artifactId>
-        <version>${spring-version}</version>
-    </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
 
-    <dependency>
-        <groupId>org.mybatis</groupId>
-        <artifactId>mybatis</artifactId>
-        <version>${mybatis.version}</version>
-    </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
 
-    <dependency>
-        <groupId>org.mybatis</groupId>
-        <artifactId>mybatis-spring</artifactId>
-        <version>${mybatis-spring.version}</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>${mysql.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>com.github.pagehelper</groupId>
-        <artifactId>pagehelper</artifactId>
-        <version>${pageHelper.version}</version>
-    </dependency>
-    <!--整合mongodb-->
-    <dependency>
-        <groupId>org.mongodb</groupId>
-        <artifactId>mongodb-driver</artifactId>
-        <version>${mongodb.version}</version>
-    </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pageHelper.version}</version>
+        </dependency>
+        <!--整合mongodb-->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>${mongodb.version}</version>
+        </dependency>
         <!--整合mongodb-->
         <dependency>
             <groupId>org.mongodb</groupId>
@@ -141,85 +144,85 @@
             <version>${spring-commmons-version}</version>
         </dependency>
 
-    <dependency>
-        <groupId>org.springframework.data</groupId>
-        <artifactId>spring-data-redis</artifactId>
-        <version>${spring-redis.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.aspectj</groupId>
-        <artifactId>aspectjrt</artifactId>
-        <version>${aspectjrt.version}</version>
-    </dependency>
-    <!--<dependency>-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring-redis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectjrt.version}</version>
+        </dependency>
+        <!--<dependency>-->
         <!--<groupId>com.alibaba</groupId>-->
         <!--<artifactId>fastjson</artifactId>-->
         <!--<version>${fastJson.version}</version>-->
-    <!--</dependency>-->
-    <!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
-    <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>dubbo</artifactId>
-        <version>${dubbo.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>com.101tec</groupId>
-        <artifactId>zkclient</artifactId>
-        <version>${zkClient.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>com.ndm</groupId>
-        <artifactId>api</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-        <groupId>redis.clients</groupId>
-        <artifactId>jedis</artifactId>
-        <version>${jedis_version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework.data</groupId>
-        <artifactId>spring-data-redis</artifactId>
-        <version>${spring-redis.version}</version>
-    </dependency>
+        <!--</dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>${zkClient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ndm</groupId>
+            <artifactId>api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis_version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring-redis.version}</version>
+        </dependency>
     </dependencies>
     <build>
-    <resources>
-        <resource>
-            <directory>src/main/java</directory>
-            <includes>
-                <include>**/*.xml</include>
-            </includes>
-            <filtering>false</filtering>
-        </resource>
-        <resource>
-            <directory>src/main/resources</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
-            <filtering>true</filtering>
-        </resource>
-    </resources>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
 
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>${jdk.version}</source>
-                <target>${jdk.version}</target>
-                <encoding>${project.build.sourceEncoding}</encoding>
-                <showDeprecation>true</showDeprecation>
-            </configuration>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-resources-plugin</artifactId>
-            <configuration>
-                <encoding>${project.build.sourceEncoding}</encoding>
-            </configuration>
-        </plugin>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
 
-    </plugins>
+        </plugins>
     </build>
 </project>
